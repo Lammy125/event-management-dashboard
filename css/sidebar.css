@@ -1,0 +1,166 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  width: 240px;
+  height: 100vh;
+  border-right: 1px solid #f1f5f9;
+}
+
+.logo {
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.sideBarCon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sideBarFirstItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #fcf7ff;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#homeIcon {
+  content: url("/images/home.png"); /* Light mode image */
+}
+
+.sideBarFirstItem span {
+  color: #8576ff;
+}
+
+.sideBarItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sideBarItem span {
+  color: #334155;
+}
+
+.sideBarItem:hover {
+  background-color: #fcf7ff;
+  color: #8576ff;
+}
+
+.notify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.notify:hover {
+  background-color: #fcf7ff;
+  color: #8576ff;
+}
+
+.sideBarItemNotification {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sideBarItemNotification span {
+  color: #334155;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f43f5e;
+}
+
+.notification p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.darkMode {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  gap: 7px;
+  position: relative;
+  color: #334155;
+}
+
+.toggle-container:hover {
+  cursor: pointer;
+}
+
+.toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-track {
+  width: 28px;
+  height: 18px;
+  border-radius: 210px;
+  position: relative;
+  background-color: #e2e8f0;
+}
+
+.toggle-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  transition: transform 0.3s;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track .toggle-thumb {
+  transform: translateX(10px);
+  background-color: #e2e8f0;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track {
+  background: #8576ff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.profile span {
+  font-size: 14px;
+  color: #334155;
+}
+
+.profile p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #64748b;
+}

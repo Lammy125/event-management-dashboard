@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/dark-mode.css" />
+  </head>
+  <body>
+    <!-- Sidebar content here -->
+    <div id="sidebar">
+      <div class="sideBar">
+        <div class="logo">
+          <img src="/images/Logo.png" alt="" />
+        </div>
+        <div class="sideBarCon">
+          <div class="sideBarFirstItem">
+            <img id="homeIcon" src="/images/home.png" alt="home" />
+            <span>Home</span>
+          </div>
+          <div class="sideBarItem">
+            <img src="/images/solar_calendar-linear.png" alt="event" />
+            <span>Events</span>
+          </div>
+          <div class="sideBarItem">
+            <img
+              src="/images/solar_user-speak-rounded-linear.png"
+              alt="speaker"
+            />
+            <span>Speakers</span>
+          </div>
+          <div class="sideBarItem">
+            <img src="/images/solar_document-linear.png" alt="report" />
+            <span>Reports</span>
+          </div>
+          <div class="notify">
+            <div class="sideBarItemNotification">
+              <img src="/images/bell.png" alt="notification" />
+              <span>Notifications</span>
+            </div>
+            <div class="notification">
+              <p>3</p>
+            </div>
+          </div>
+          <div class="sideBarItem">
+            <img src="/images/double-chat-bubble.png" alt="message" />
+            <span>Messages</span>
+          </div>
+          <div class="sideBarItem">
+            <img src="/images/settings-2.png" alt="setting" />
+            <span>Settings</span>
+          </div>
+          <div class="sideBarItem" id="collapse">
+            <img src="/images/double-chevron-left.png" alt="collapse" />
+            <span>Collapse</span>
+          </div>
+          <div class="darkMode">
+            <label class="toggle-container" for="dark-mode-toggle">
+              <div>
+                <input type="checkbox" id="dark-mode-toggle" />
+                <div class="toggle-track">
+                  <div class="toggle-thumb"></div>
+                </div>
+              </div>
+              Dark Mode
+            </label>
+          </div>
+          <div class="profile">
+            <img src="/images/Avatar.png" alt="avatar" />
+            <div>
+              <span>Rudra Devi</span>
+              <p>rudra.devi@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Overview cards here -->
+      <section id="overview-cards">
+        <div class="title">
+          <h1>Welcome! here’s your summary</h1>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Total Events</h4>
+              <img id="infoIcon" src="/images/information.png" alt="info" />
+            </div>
+            <div class="cardText">
+              <span>100,000</span>
+              <div class="ratings-up">
+                <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                <p>+5.0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Active Speakers</h4>
+              <img id="infoIcon" src="/images/information.png" alt="info" />
+            </div>
+            <div class="cardText">
+              <span>25</span>
+              <div class="ratings-down">
+                <img src="/images/arrow-down-right.png" alt="arrow-down" />
+                <p>-5.0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Total Registrations</h4>
+              <img id="infoIcon" src="/images/information.png" alt="info" />
+            </div>
+            <div class="cardText">
+              <span>300</span>
+              <div class="ratings-up">
+                <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                <p>+5.0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardTitle">
+              <h4>Total Revenue</h4>
+              <img id="infoIcon" src="/images/information.png" alt="info" />
+            </div>
+            <div class="cardText">
+              <span>$500,000</span>
+              <div class="ratings-up">
+                <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                <p>+5.0%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="eventRegister">
+        <h3>Event Registrations per month</h3>
+        <!-- Charts section here -->
+        <section id="charts"></section>
+
+        <!-- Carousel here -->
+        <section id="news-updates"></section>
+      </div>
+
+      <!-- Events History here -->
+      <section id="event-history">
+        <div class="eventHistory">
+          <!-- <h3>Events History</h3> -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="event-modal"></div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

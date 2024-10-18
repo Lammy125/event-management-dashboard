@@ -1,0 +1,72 @@
+body.dark-mode {
+  background-color: #383544;
+  color: white;
+}
+
+body.dark-mode .sideBar {
+  background-color: #484554;
+}
+
+body.dark-mode .sideBarFirstItem span {
+  color: #ffffff;
+}
+
+body.dark-mode .sideBarFirstItem {
+  background-color: #8576ff;
+  color: #ffffff;
+}
+
+body.dark-mode #homeIcon {
+  content: url("/images/home-white.png");
+}
+
+body.dark-mode .sideBarItem:hover {
+  background-color: #8576ff;
+  border-radius: 2px;
+}
+
+body.dark-mode .sideBarFirstItem {
+  background-color: #8576ff;
+}
+
+body.dark-mode .sideBarItem span {
+  color: #ffffff;
+}
+
+body.dark-mode .notify:hover {
+  background-color: #8576ff;
+  border-radius: 2px;
+}
+
+body.dark-mode .notify span {
+  color: #ffffff;
+}
+
+body.dark-mode .toggle-container {
+  color: #ffffff;
+}
+
+body.dark-mode .profile span {
+  color: #ffffff;
+}
+
+body.dark-mode .profile p {
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .cardTitle h4 {
+  color: #ffffff;
+}
+
+body.dark-mode #infoIcon {
+  content: url("/images/information-white.png");
+}
+
+body.dark-mode .cardText span {
+  color: #ffffff;
+}

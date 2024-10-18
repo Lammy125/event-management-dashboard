@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+  padding: 30px 70px 20px 20px;
+}
+
+/* Card Section */
+.title h1 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 2px;
+  padding: 16px;
+  border: 1px solid #f2f2f7;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardTitle h4 {
+  font-size: 14px;
+  color: #64748b;
+}
+
+body.dark-mode #infoIcon {
+  content: url("/images/information.png");
+}
+
+.cardText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardText span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.ratings-up {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 10px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.ratings-down {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 10px;
+  color: #f43f5e;
+  font-weight: 600;
+}
+
+/* Event Registration */
+.eventRegister {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.eventRegister h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Events History */
+.eventHistory h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
