@@ -5,6 +5,7 @@ body.dark-mode {
 
 body.dark-mode .sideBar {
   background-color: #484554;
+  border-right: none;
 }
 
 body.dark-mode .sideBarFirstItem span {
@@ -54,6 +55,10 @@ body.dark-mode .profile p {
   color: #ffffff;
 }
 
+body.dark-mode main {
+  scrollbar-color: #484554 transparent;
+}
+
 body.dark-mode .card {
   background-color: #484554;
   border: none;
@@ -69,4 +74,113 @@ body.dark-mode #infoIcon {
 
 body.dark-mode .cardText span {
   color: #ffffff;
+}
+
+body.dark-mode .chart {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .search {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .search input {
+  background-color: #484554;
+  color: #ffffff;
+}
+
+body.dark-mode .filter {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .filter p {
+  color: #fcf7ff;
+}
+
+body.dark-mode .filter img {
+  content: url("/images/chevron-down-white.png");
+}
+
+body.dark-mode .display h5 {
+  color: #ffffff;
+}
+
+body.dark-mode .sort h5 {
+  color: #ffffff;
+}
+
+body.dark-mode .dot-vertical {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .dot-vertical img {
+  content: url("/images/dots-vertical-white.png");
+}
+
+body.dark-mode .export {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .export p {
+  color: #ffffff;
+}
+
+body.dark-mode .export img {
+  content: url("/images/download-white.png");
+}
+
+body.dark-mode .tableHead {
+  background-color: #6a6676;
+}
+
+body.dark-mode .tableHead th {
+  color: #ffffff;
+}
+
+body.dark-mode .tableBody {
+  background-color: #484554;
+}
+
+body.dark-mode .tableBody td {
+  color: #ffffff;
+}
+
+body.dark-mode .in-progress {
+  border: 1px solid #77b1ff;
+  background-color: transparent;
+}
+
+body.dark-mode .completed {
+  border: 1px solid #65ddb5;
+  background-color: transparent;
+}
+
+body.dark-mode .show-text h5 {
+  color: #ffffff;
+}
+
+body.dark-mode .page {
+  color: #ffffff;
+}
+
+body.dark-mode .prev {
+  background-color: #484554;
+}
+
+body.dark-mode .prev img {
+  content: url("/images/chevron-left-white.png");
+}
+
+body.dark-mode .next {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .next img {
+  content: url("/images/chevron-right-white.png");
 }

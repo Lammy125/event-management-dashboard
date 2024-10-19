@@ -21,18 +21,18 @@
             <img id="homeIcon" src="/images/home.png" alt="home" />
             <span>Home</span>
           </div>
-          <div class="sideBarItem">
+          <div class="sideBarItem event">
             <img src="/images/solar_calendar-linear.png" alt="event" />
             <span>Events</span>
           </div>
-          <div class="sideBarItem">
+          <div class="sideBarItem speaker">
             <img
               src="/images/solar_user-speak-rounded-linear.png"
               alt="speaker"
             />
             <span>Speakers</span>
           </div>
-          <div class="sideBarItem">
+          <div class="sideBarItem report">
             <img src="/images/solar_document-linear.png" alt="report" />
             <span>Reports</span>
           </div>
@@ -45,15 +45,15 @@
               <p>3</p>
             </div>
           </div>
-          <div class="sideBarItem">
+          <div class="sideBarItem message">
             <img src="/images/double-chat-bubble.png" alt="message" />
             <span>Messages</span>
           </div>
-          <div class="sideBarItem">
+          <div class="sideBarItem setting">
             <img src="/images/settings-2.png" alt="setting" />
             <span>Settings</span>
           </div>
-          <div class="sideBarItem" id="collapse">
+          <div class="sideBarItem collapse" id="collapse">
             <img src="/images/double-chevron-left.png" alt="collapse" />
             <span>Collapse</span>
           </div>
@@ -65,12 +65,12 @@
                   <div class="toggle-thumb"></div>
                 </div>
               </div>
-              Dark Mode
+              <span> Dark Mode</span>
             </label>
           </div>
           <div class="profile">
             <img src="/images/Avatar.png" alt="avatar" />
-            <div>
+            <div class="profileInfo">
               <span>Rudra Devi</span>
               <p>rudra.devi@gmail.com</p>
             </div>
@@ -141,19 +141,217 @@
         </div>
       </section>
 
-      <div class="eventRegister">
+      <div class="eventRegisterTitle">
         <h3>Event Registrations per month</h3>
+      </div>
+      <div class="eventRegister">
         <!-- Charts section here -->
-        <section id="charts"></section>
+        <section id="charts">
+          <canvas id="myChart" class="chart"></canvas>
+        </section>
 
         <!-- Carousel here -->
-        <section id="news-updates"></section>
+        <section id="news-updates">
+          <div>
+            <div>
+              <!-- <img src="/images/Slide-female.png" alt="" /> -->
+            </div>
+          </div>
+        </section>
       </div>
 
       <!-- Events History here -->
       <section id="event-history">
         <div class="eventHistory">
-          <!-- <h3>Events History</h3> -->
+          <h3>Events History</h3>
+        </div>
+        <div class="filters">
+          <div class="searchCon">
+            <div class="search">
+              <img src="/images/search.png" alt="" />
+              <input type="text" placeholder="Search..." />
+            </div>
+            <div class="filter">
+              <p>Date</p>
+              <img src="/images/chevron-down.png" alt="" />
+            </div>
+            <div class="filter">
+              <p>Status</p>
+              <img src="/images/chevron-down.png" alt="" />
+            </div>
+            <div class="filter">
+              <p>Name</p>
+              <img src="/images/chevron-down.png" alt="" />
+            </div>
+            <div class="display">
+              <h5>Displaying 100 results</h5>
+            </div>
+          </div>
+          <div class="sortCon">
+            <div class="sort">
+              <h5>Sort:</h5>
+            </div>
+            <div class="filter">
+              <p>Most Recent</p>
+              <img src="/images/chevron-down.png" alt="" />
+            </div>
+            <div class="dot-vertical">
+              <img src="/images/dots-vertical.png" alt="" />
+            </div>
+            <div class="export">
+              <img src="/images/download.png" alt="" />
+              <p>Export</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <!-- Event Table here -->
+          <table class="eventTable">
+            <thead class="tableHead">
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Speaker</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="tableBody">
+              <!-- Event Rows here -->
+              <tr>
+                <td>Cloud Innovation Summit</td>
+                <td>2024-10-15</td>
+                <td>Jane Doe</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Blockchain Revolution Conference</td>
+                <td>2024-11-05</td>
+                <td>Dr. Peter Smith</td>
+                <td>
+                  <div class="status in-progress">
+                    <div class="dot"></div>
+                    <span>In Progress</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>AI in Healthcare Symposium</td>
+                <td>2024-12-01</td>
+                <td>Dr. Aisha Malik</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Future of Fintech Forum</td>
+                <td>2024-10-25</td>
+                <td>John Lee</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Data Analytics in Business</td>
+                <td>2024-11-12</td>
+                <td>Rachel Moore</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sustainable Energy Expo</td>
+                <td>2024-09-28</td>
+                <td>Prof. Alan Green</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Web3 Interfaces Workshop</td>
+                <td>2024-10-10</td>
+                <td>Kevin Adams</td>
+                <td>
+                  <div class="status in-progress">
+                    <div class="dot"></div>
+                    <span>In Progress</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Cybersecurity for Startups</td>
+                <td>2024-11-19</td>
+                <td>Emily Zhang</td>
+                <td>
+                  <div class="status completed">
+                    <div class="dot"></div>
+                    <span>Completed</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Smart Cities Forum</td>
+                <td>2024-10-18</td>
+                <td>Dr. Maria Hernandez</td>
+                <td>
+                  <div class="status in-progress">
+                    <div class="dot"></div>
+                    <span>In Progress</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Tech Safari Mixer</td>
+                <td>2024-09-30</td>
+                <td>Guest Panel</td>
+                <td>
+                  <div class="status in-progress">
+                    <div class="dot"></div>
+                    <span>In Progress</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Pagination -->
+        <div class="pagination">
+          <div class="pageNumber">
+            <div class="prev">
+              <img src="/images/chevron-left-pagination.png" alt="prev" />
+            </div>
+            <div class="first-page">1</div>
+            <div class="page">2</div>
+            <div class="page">3</div>
+            <div class="next">
+              <img src="/images/chevron-right-pagination.png" alt="next" />
+            </div>
+          </div>
+          <div class="show">
+            <div class="show-text">
+              <h5>Show:</h5>
+            </div>
+            <div class="filter">
+              <p>10 rows</p>
+              <img src="/images/chevron-down.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
     </main>

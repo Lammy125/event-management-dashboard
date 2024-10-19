@@ -6,6 +6,7 @@
   width: 240px;
   height: 100vh;
   border-right: 1px solid #f1f5f9;
+  transition: width 0.3s ease;
 }
 
 .logo {
@@ -17,6 +18,85 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.sideBar .sideBarCon span {
+  display: inline; /* Show text in expanded state */
+}
+
+.sideBar .sideBarCon p {
+  display: inline;
+}
+
+/* Collapsed Sidebar */
+.sideBar.collapsed {
+  width: 60px;
+}
+
+.sideBar.collapsed .logo img {
+  content: url("/images/Logo\ Box.png");
+}
+
+.sideBar.collapsed .sideBarCon span {
+  display: none; /* Hide text when collapsed */
+}
+
+.sideBar.collapsed .sideBarCon p {
+  display: none;
+}
+
+.sideBar.collapsed .event img {
+  content: url("/images/Icon.png");
+}
+
+.sideBar.collapsed .logo img {
+  content: url("/images/Logo\ Box.png");
+}
+
+.sideBar.collapsed .speaker img {
+  content: url("/images/receive-money.png");
+}
+
+.sideBar.collapsed .report img {
+  content: url("/images/Icon-report.png");
+}
+
+.sideBar.collapsed .collapse img {
+  content: url("/images/Nav\ Item.png");
+}
+
+.sideBar.collapsed .sideBarItemNotification img {
+  content: url("/images/notify.png");
+}
+
+.sideBar.collapsed .message img {
+  content: url("/images/message.png");
+}
+
+.sideBar.collapsed .setting img {
+  content: url("/images/settings.png");
+}
+
+.sideBar.collapsed .notification {
+  display: none;
+}
+
+.sideBar.collapsed .sideBarFirstItem {
+  justify-content: center;
+  padding: 4.6px 8px;
+}
+
+.sideBar.collapsed .sideBarItem {
+  justify-content: center;
+  padding: 4.6px 8px;
+}
+
+.sideBar.collapsed .profile {
+  justify-content: center;
+}
+
+.sideBar.collapsed .profileInfo {
+  display: none;
 }
 
 .sideBarFirstItem {
@@ -45,6 +125,7 @@
   padding: 8px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .sideBarItem span {

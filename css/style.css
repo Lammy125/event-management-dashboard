@@ -17,6 +17,8 @@ body {
 main {
   flex-grow: 1;
   padding: 30px 70px 20px 20px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 /* Card Section */
@@ -29,7 +31,7 @@ main {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 15px;
 }
 
 .card {
@@ -39,6 +41,14 @@ main {
   border-radius: 2px;
   padding: 16px;
   border: 1px solid #f2f2f7;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: transparent;
+  border: 1px solid #d3d3d3;
+  transform: scale(1.05);
 }
 
 .cardTitle {
@@ -87,19 +97,258 @@ body.dark-mode #infoIcon {
 }
 
 /* Event Registration */
-.eventRegister {
+.eventRegisterTitle {
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
 }
 
-.eventRegister h3 {
+.eventRegisterTitle h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+.eventRegister {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 300px;
+}
+
+.chart {
+  padding: 20px;
+  border-radius: 2px;
+  border: 1px solid #f2f2f7;
 }
 
 /* Events History */
+.eventHistory {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .eventHistory h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchCon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #e2e8f0;
+  padding: 7px 8px;
+  border-radius: 2px;
+  color: #334155;
+}
+
+.search input {
+  border: none;
+  color: #334155;
+  font-family: "Inter", sans-serif;
+}
+
+.search input::placeholder {
+  color: #cbd5e1;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #334155;
+}
+
+.display h5 {
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sortCon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort h5 {
+  color: #334155;
+}
+
+.dot-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.export {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.export p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #334155;
+}
+
+.eventTable {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHead {
+  text-align: left;
+  background-color: #f1f5f9;
+  border-collapse: collapse;
+}
+
+.tableHead th {
+  padding: 13px 10px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+}
+
+.tableBody td {
+  padding: 10px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  width: 105px;
+}
+
+.completed {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+.completed .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+.in-progress {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.in-progress .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.prev {
+  padding: 6px 8px;
+  background-color: #e2e8f0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #8576ff;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  color: #334155;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.next {
+  padding: 6px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.show-text h5 {
+  color: #334155;
+  font-weight: 400;
 }
