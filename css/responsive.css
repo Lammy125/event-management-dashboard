@@ -1,0 +1,173 @@
+@media screen and (max-width: 480px) {
+  .sideBar {
+    display: none;
+  }
+
+  main {
+    padding: 10px 15px 100px 15px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 10px 15px 10px 9px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .menuIcon img {
+    height: 30px;
+  }
+
+  .navBar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    padding: 0 15px;
+    border-top: 1px solid #e2e8f0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .navBarCon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navBarFirstItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid #8576ff;
+    padding: 15px 10px;
+  }
+
+  .navBarFirstItem span {
+    font-size: 14px;
+    color: #8576ff;
+  }
+
+  .navBarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 15px 10px;
+  }
+
+  .navBarItem img {
+    width: 20px;
+  }
+
+  .navBarItemProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+  }
+
+  .navBarItemProfile img {
+    width: 24px;
+  }
+
+  .navBarItem span {
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .navBarItemProfile span {
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .eventRegister {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    height: auto;
+  }
+
+  .chart {
+    padding: 10px 8px;
+    height: 260px;
+    width: 100%;
+  }
+
+  .imageSlider {
+    height: 320px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .searchCon {
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+  }
+
+  .sortCon {
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+  }
+
+  .recent {
+    justify-content: space-between;
+  }
+
+  .sort h5 {
+    font-weight: 400;
+  }
+
+  .exports {
+    justify-content: space-between;
+  }
+
+  .showText {
+    display: none;
+  }
+
+  .modal > div {
+    width: 335px;
+  }
+
+  .allBtn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .edit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    height: 120vh;
+    padding: 10px 15px 100px 15px;
+  }
+}

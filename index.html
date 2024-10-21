@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/dark-mode.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <!-- Sidebar content here -->
     <div id="sidebar">
       <div class="sideBar">
         <div class="logo">
-          <img src="/images/Logo.png" alt="" />
+          <img src="/images/Logo.png" alt="Logo" />
         </div>
         <div class="sideBarCon">
           <div class="sideBarFirstItem">
@@ -79,304 +80,357 @@
       </div>
     </div>
 
-    <main>
-      <!-- Overview cards here -->
-      <section id="overview-cards">
-        <div class="title">
-          <h1>Welcome! here’s your summary</h1>
+    <div>
+      <!-- Header | Mobile View -->
+      <div class="header">
+        <div class="logo">
+          <img src="/images/Logo.png" alt="Logo" />
         </div>
-        <div class="cards">
-          <div class="card">
-            <div class="cardTitle">
-              <h4>Total Events</h4>
-              <img id="infoIcon" src="/images/information.png" alt="info" />
-            </div>
-            <div class="cardText">
-              <span>100,000</span>
-              <div class="ratings-up">
-                <img src="/images/arrow-up-right.png" alt="arrow-up" />
-                <p>+5.0%</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="cardTitle">
-              <h4>Active Speakers</h4>
-              <img id="infoIcon" src="/images/information.png" alt="info" />
-            </div>
-            <div class="cardText">
-              <span>25</span>
-              <div class="ratings-down">
-                <img src="/images/arrow-down-right.png" alt="arrow-down" />
-                <p>-5.0%</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="cardTitle">
-              <h4>Total Registrations</h4>
-              <img id="infoIcon" src="/images/information.png" alt="info" />
-            </div>
-            <div class="cardText">
-              <span>300</span>
-              <div class="ratings-up">
-                <img src="/images/arrow-up-right.png" alt="arrow-up" />
-                <p>+5.0%</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="cardTitle">
-              <h4>Total Revenue</h4>
-              <img id="infoIcon" src="/images/information.png" alt="info" />
-            </div>
-            <div class="cardText">
-              <span>$500,000</span>
-              <div class="ratings-up">
-                <img src="/images/arrow-up-right.png" alt="arrow-up" />
-                <p>+5.0%</p>
-              </div>
-            </div>
-          </div>
+        <div class="menuIcon">
+          <img src="/images/solar_hamburger-menu-broken.png" alt="Menu icon" />
         </div>
-      </section>
-
-      <!-- Event Registration -->
-      <div class="eventRegisterTitle">
-        <h3>Event Registrations per month</h3>
       </div>
-      <div class="eventRegister">
-        <!-- Charts section here -->
-        <section id="charts">
-          <canvas id="myChart" class="chart"></canvas>
-        </section>
 
-        <!-- Carousel here -->
-        <section id="news-updates">
-          <div class="imageSlider">
-            <div></div>
-            <div class="slider">
-              <div class="sliderButton" id="prevBtn">
-                <img src="/images/chevron-left.png" alt="previous" />
+      <!-- Main content here -->
+      <main>
+        <!-- Overview cards here -->
+        <section id="overview-cards">
+          <div class="title">
+            <h1>Welcome! here’s your summary</h1>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="cardTitle">
+                <h4>Total Events</h4>
+                <img id="infoIcon" src="/images/information.png" alt="info" />
               </div>
-              <div class="sliderButton" id="nextBtn">
-                <img src="/images/chevron-right.png" alt="next" />
+              <div class="cardText">
+                <span>100,000</span>
+                <div class="ratings-up">
+                  <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                  <p>+5.0%</p>
+                </div>
               </div>
             </div>
-            <div class="newsUpdate">
-              <h5>Latest News & Updates</h5>
-              <p>
-                Turpis interdum nunc varius ornare dignissim pretium. Massa
-                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                Fringilla purus, erat fringilla tincidunt quisque non.
-                Pellentesque in ut tellus.
-              </p>
-              <!-- Dotted navigation -->
-              <div class="dottedDash">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <div class="card">
+              <div class="cardTitle">
+                <h4>Active Speakers</h4>
+                <img id="infoIcon" src="/images/information.png" alt="info" />
+              </div>
+              <div class="cardText">
+                <span>25</span>
+                <div class="ratings-down">
+                  <img src="/images/arrow-down-right.png" alt="arrow-down" />
+                  <p>-5.0%</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardTitle">
+                <h4>Total Registrations</h4>
+                <img id="infoIcon" src="/images/information.png" alt="info" />
+              </div>
+              <div class="cardText">
+                <span>300</span>
+                <div class="ratings-up">
+                  <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                  <p>+5.0%</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cardTitle">
+                <h4>Total Revenue</h4>
+                <img id="infoIcon" src="/images/information.png" alt="info" />
+              </div>
+              <div class="cardText">
+                <span>$500,000</span>
+                <div class="ratings-up">
+                  <img src="/images/arrow-up-right.png" alt="arrow-up" />
+                  <p>+5.0%</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
 
-      <!-- Events History here -->
-      <section id="event-history">
-        <div class="eventHistory">
-          <h3>Events History</h3>
+        <!-- Event Registration -->
+        <div class="eventRegisterTitle">
+          <h3>Event Registrations per month</h3>
         </div>
-        <div class="filters">
-          <div class="searchCon">
-            <div class="search">
-              <img src="/images/search.png" alt="" />
-              <input type="text" placeholder="Search..." />
+        <div class="eventRegister">
+          <!-- Charts section here -->
+          <section id="charts">
+            <canvas id="myChart" class="chart"></canvas>
+          </section>
+
+          <!-- Carousel here -->
+          <section id="news-updates">
+            <div class="imageSlider">
+              <div></div>
+              <div class="slider">
+                <div class="sliderButton" id="prevBtn">
+                  <img src="/images/chevron-left.png" alt="previous" />
+                </div>
+                <div class="sliderButton" id="nextBtn">
+                  <img src="/images/chevron-right.png" alt="next" />
+                </div>
+              </div>
+              <div class="newsUpdate">
+                <h5>Latest News & Updates</h5>
+                <p>
+                  Turpis interdum nunc varius ornare dignissim pretium. Massa
+                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                  Fringilla purus, erat fringilla tincidunt quisque non.
+                  Pellentesque in ut tellus.
+                </p>
+                <!-- Dotted navigation -->
+                <div class="dottedDash">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
             </div>
-            <div class="filter">
-              <p>Date</p>
-              <img src="/images/chevron-down.png" alt="" />
+          </section>
+        </div>
+
+        <!-- Events History here -->
+        <section id="event-history">
+          <div class="eventHistory">
+            <h3>Events History</h3>
+          </div>
+          <div class="filters">
+            <div class="searchCon">
+              <div class="search">
+                <img src="/images/search.png" alt="" />
+                <input type="text" placeholder="Search..." />
+              </div>
+              <div class="filter">
+                <p>Date</p>
+                <img src="/images/chevron-down.png" alt="" />
+              </div>
+              <div class="filter">
+                <p>Status</p>
+                <img src="/images/chevron-down.png" alt="" />
+              </div>
+              <div class="filter">
+                <p>Name</p>
+                <img src="/images/chevron-down.png" alt="" />
+              </div>
+              <div class="display">
+                <h5>Displaying 100 results</h5>
+              </div>
             </div>
-            <div class="filter">
-              <p>Status</p>
-              <img src="/images/chevron-down.png" alt="" />
-            </div>
-            <div class="filter">
-              <p>Name</p>
-              <img src="/images/chevron-down.png" alt="" />
-            </div>
-            <div class="display">
-              <h5>Displaying 100 results</h5>
+            <div class="sortCon">
+              <div class="recent">
+                <div class="sort">
+                  <h5>Sort:</h5>
+                </div>
+                <div class="filter">
+                  <p>Most Recent</p>
+                  <img src="/images/chevron-down.png" alt="" />
+                </div>
+              </div>
+              <div class="exports">
+                <div class="dot-vertical">
+                  <img src="/images/dots-vertical.png" alt="" />
+                </div>
+                <div class="export">
+                  <img src="/images/download.png" alt="" />
+                  <p>Export</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="sortCon">
-            <div class="sort">
-              <h5>Sort:</h5>
+          <div class="">
+            <!-- Event Table here -->
+            <table class="eventTable">
+              <thead class="tableHead">
+                <tr>
+                  <th>Event Name</th>
+                  <th>Date</th>
+                  <th>Speaker</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class="tableBody">
+                <!-- Event Rows here -->
+                <tr class="event-item">
+                  <td>Cloud Innovation Summit</td>
+                  <td>2024-10-15</td>
+                  <td>Jane Doe</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Blockchain Revolution Conference</td>
+                  <td>2024-11-05</td>
+                  <td>Dr. Peter Smith</td>
+                  <td>
+                    <div class="status in-progress">
+                      <div class="dot"></div>
+                      <span>In Progress</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>AI in Healthcare Symposium</td>
+                  <td>2024-12-01</td>
+                  <td>Dr. Aisha Malik</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Future of Fintech Forum</td>
+                  <td>2024-10-25</td>
+                  <td>John Lee</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Data Analytics in Business</td>
+                  <td>2024-11-12</td>
+                  <td>Rachel Moore</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Sustainable Energy Expo</td>
+                  <td>2024-09-28</td>
+                  <td>Prof. Alan Green</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Web3 Interfaces Workshop</td>
+                  <td>2024-10-10</td>
+                  <td>Kevin Adams</td>
+                  <td>
+                    <div class="status in-progress">
+                      <div class="dot"></div>
+                      <span>In Progress</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Cybersecurity for Startups</td>
+                  <td>2024-11-19</td>
+                  <td>Emily Zhang</td>
+                  <td>
+                    <div class="status completed">
+                      <div class="dot"></div>
+                      <span>Completed</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Smart Cities Forum</td>
+                  <td>2024-10-18</td>
+                  <td>Dr. Maria Hernandez</td>
+                  <td>
+                    <div class="status in-progress">
+                      <div class="dot"></div>
+                      <span>In Progress</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="event-item">
+                  <td>Tech Safari Mixer</td>
+                  <td>2024-09-30</td>
+                  <td>Guest Panel</td>
+                  <td>
+                    <div class="status in-progress">
+                      <div class="dot"></div>
+                      <span>In Progress</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Pagination -->
+          <div class="pagination">
+            <div class="pageNumber">
+              <div class="prev">
+                <img src="/images/chevron-left-pagination.png" alt="prev" />
+              </div>
+              <div class="first-page">1</div>
+              <div class="page">2</div>
+              <div class="page">3</div>
+              <div class="next">
+                <img src="/images/chevron-right-pagination.png" alt="next" />
+              </div>
             </div>
-            <div class="filter">
-              <p>Most Recent</p>
-              <img src="/images/chevron-down.png" alt="" />
+            <div class="show">
+              <div class="showText">
+                <h5>Show:</h5>
+              </div>
+              <div class="filter">
+                <p>10 rows</p>
+                <img src="/images/chevron-down.png" alt="" />
+              </div>
             </div>
-            <div class="dot-vertical">
-              <img src="/images/dots-vertical.png" alt="" />
+          </div>
+        </section>
+      </main>
+
+      <!-- Navbar content here | Mobile View -->
+      <div id="navbar">
+        <div class="navBar">
+          <div class="navBarCon">
+            <div class="navBarFirstItem">
+              <img src="/images/home-mobile.png" alt="home" />
+              <span>Home</span>
             </div>
-            <div class="export">
-              <img src="/images/download.png" alt="" />
-              <p>Export</p>
+            <div class="navBarItem">
+              <img src="/images/solar_calendar-linear-mobile.png" alt="event" />
+              <span>Events</span>
+            </div>
+            <div class="navBarItem">
+              <img
+                src="/images/solar_user-speak-rounded-linear-mobile.png"
+                alt="speaker"
+              />
+              <span>Speakers</span>
+            </div>
+            <div class="navBarItem">
+              <img
+                src="/images/solar_document-linear-mobile.png"
+                alt="report"
+              />
+              <span>Reports</span>
+            </div>
+            <div class="navBarItemProfile">
+              <img src="/images/user-circle.png" alt="avatar" />
+              <div class="profileInfo">
+                <span>Profile</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="">
-          <!-- Event Table here -->
-          <table class="eventTable">
-            <thead class="tableHead">
-              <tr>
-                <th>Event Name</th>
-                <th>Date</th>
-                <th>Speaker</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody class="tableBody">
-              <!-- Event Rows here -->
-              <tr class="event-item">
-                <td>Cloud Innovation Summit</td>
-                <td>2024-10-15</td>
-                <td>Jane Doe</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Blockchain Revolution Conference</td>
-                <td>2024-11-05</td>
-                <td>Dr. Peter Smith</td>
-                <td>
-                  <div class="status in-progress">
-                    <div class="dot"></div>
-                    <span>In Progress</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>AI in Healthcare Symposium</td>
-                <td>2024-12-01</td>
-                <td>Dr. Aisha Malik</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Future of Fintech Forum</td>
-                <td>2024-10-25</td>
-                <td>John Lee</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Data Analytics in Business</td>
-                <td>2024-11-12</td>
-                <td>Rachel Moore</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Sustainable Energy Expo</td>
-                <td>2024-09-28</td>
-                <td>Prof. Alan Green</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Web3 Interfaces Workshop</td>
-                <td>2024-10-10</td>
-                <td>Kevin Adams</td>
-                <td>
-                  <div class="status in-progress">
-                    <div class="dot"></div>
-                    <span>In Progress</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Cybersecurity for Startups</td>
-                <td>2024-11-19</td>
-                <td>Emily Zhang</td>
-                <td>
-                  <div class="status completed">
-                    <div class="dot"></div>
-                    <span>Completed</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Smart Cities Forum</td>
-                <td>2024-10-18</td>
-                <td>Dr. Maria Hernandez</td>
-                <td>
-                  <div class="status in-progress">
-                    <div class="dot"></div>
-                    <span>In Progress</span>
-                  </div>
-                </td>
-              </tr>
-              <tr class="event-item">
-                <td>Tech Safari Mixer</td>
-                <td>2024-09-30</td>
-                <td>Guest Panel</td>
-                <td>
-                  <div class="status in-progress">
-                    <div class="dot"></div>
-                    <span>In Progress</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- Pagination -->
-        <div class="pagination">
-          <div class="pageNumber">
-            <div class="prev">
-              <img src="/images/chevron-left-pagination.png" alt="prev" />
-            </div>
-            <div class="first-page">1</div>
-            <div class="page">2</div>
-            <div class="page">3</div>
-            <div class="next">
-              <img src="/images/chevron-right-pagination.png" alt="next" />
-            </div>
-          </div>
-          <div class="show">
-            <div class="show-text">
-              <h5>Show:</h5>
-            </div>
-            <div class="filter">
-              <p>10 rows</p>
-              <img src="/images/chevron-down.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </div>
 
     <!-- Modal -->
     <div id="event-modal" class="modal">
@@ -411,7 +465,7 @@
           </div>
         </div>
         <div class="allBtn">
-          <div>
+          <div class="edit">
             <button class="editBtn">Edit</button>
           </div>
           <div class="btn">
