@@ -141,6 +141,7 @@
         </div>
       </section>
 
+      <!-- Event Registration -->
       <div class="eventRegisterTitle">
         <h3>Event Registrations per month</h3>
       </div>
@@ -152,9 +153,30 @@
 
         <!-- Carousel here -->
         <section id="news-updates">
-          <div>
-            <div>
-              <!-- <img src="/images/Slide-female.png" alt="" /> -->
+          <div class="imageSlider">
+            <div></div>
+            <div class="slider">
+              <div class="sliderButton" id="prevBtn">
+                <img src="/images/chevron-left.png" alt="previous" />
+              </div>
+              <div class="sliderButton" id="nextBtn">
+                <img src="/images/chevron-right.png" alt="next" />
+              </div>
+            </div>
+            <div class="newsUpdate">
+              <h5>Latest News & Updates</h5>
+              <p>
+                Turpis interdum nunc varius ornare dignissim pretium. Massa
+                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                Fringilla purus, erat fringilla tincidunt quisque non.
+                Pellentesque in ut tellus.
+              </p>
+              <!-- Dotted navigation -->
+              <div class="dottedDash">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
             </div>
           </div>
         </section>
@@ -217,7 +239,7 @@
             </thead>
             <tbody class="tableBody">
               <!-- Event Rows here -->
-              <tr>
+              <tr class="event-item">
                 <td>Cloud Innovation Summit</td>
                 <td>2024-10-15</td>
                 <td>Jane Doe</td>
@@ -228,7 +250,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Blockchain Revolution Conference</td>
                 <td>2024-11-05</td>
                 <td>Dr. Peter Smith</td>
@@ -239,7 +261,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>AI in Healthcare Symposium</td>
                 <td>2024-12-01</td>
                 <td>Dr. Aisha Malik</td>
@@ -250,7 +272,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Future of Fintech Forum</td>
                 <td>2024-10-25</td>
                 <td>John Lee</td>
@@ -261,7 +283,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Data Analytics in Business</td>
                 <td>2024-11-12</td>
                 <td>Rachel Moore</td>
@@ -272,7 +294,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Sustainable Energy Expo</td>
                 <td>2024-09-28</td>
                 <td>Prof. Alan Green</td>
@@ -283,7 +305,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Web3 Interfaces Workshop</td>
                 <td>2024-10-10</td>
                 <td>Kevin Adams</td>
@@ -294,7 +316,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Cybersecurity for Startups</td>
                 <td>2024-11-19</td>
                 <td>Emily Zhang</td>
@@ -305,7 +327,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Smart Cities Forum</td>
                 <td>2024-10-18</td>
                 <td>Dr. Maria Hernandez</td>
@@ -316,7 +338,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
+              <tr class="event-item">
                 <td>Tech Safari Mixer</td>
                 <td>2024-09-30</td>
                 <td>Guest Panel</td>
@@ -357,7 +379,48 @@
     </main>
 
     <!-- Modal -->
-    <div id="event-modal"></div>
+    <div id="event-modal" class="modal">
+      <div>
+        <div class="event">
+          <div class="eventName">
+            <h4>Event Name</h4>
+            <div class="close">
+              <img src="/images/close.png" alt="close" />
+            </div>
+          </div>
+          <div>
+            <p class="date">Event Date</p>
+            <p class="description">Event Description</p>
+          </div>
+          <div class="avatarCon">
+            <div class="avatarImg">
+              <img src="/images/avatar-boy.png" alt="avatar boy" />
+            </div>
+            <div class="avatarImg">
+              <img src="/images/avatar-girl.png" alt="avatar girl" />
+            </div>
+            <div class="avatarImg">
+              <img src="/images/avatar-oldman.png" alt="avatar oldman" />
+            </div>
+          </div>
+          <div class="speaker">
+            <p>
+              3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C.
+            </p>
+            <span>300 Attendees</span>
+          </div>
+        </div>
+        <div class="allBtn">
+          <div>
+            <button class="editBtn">Edit</button>
+          </div>
+          <div class="btn">
+            <button class="deleteBtn">Delete</button>
+            <button class="completeBtn">Mark as completed</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript Files -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

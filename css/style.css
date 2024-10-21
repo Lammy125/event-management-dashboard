@@ -111,13 +111,75 @@ body.dark-mode #infoIcon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  height: 300px;
+  height: 330px;
 }
 
 .chart {
   padding: 20px;
   border-radius: 2px;
   border: 1px solid #f2f2f7;
+}
+
+.imageSlider {
+  background-image: url("/images/Slide-female.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.sliderButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.newsUpdate h5 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.newsUpdate p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.dottedDash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 5px;
+}
+
+.dot {
+  width: 12px;
+  height: 3px;
+  background-color: #ffffff50;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #ffffff !important;
 }
 
 /* Events History */
@@ -255,6 +317,11 @@ body.dark-mode #infoIcon {
   border: none;
 }
 
+.event-item:hover {
+  cursor: pointer;
+  background-color: #f1f5f97c;
+}
+
 .status {
   display: flex;
   align-items: center;
@@ -351,4 +418,160 @@ body.dark-mode #infoIcon {
 .show-text h5 {
   color: #334155;
   font-weight: 400;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal > div {
+  background-color: white;
+  border-radius: 2px;
+  width: 440px;
+  position: relative;
+}
+
+.event {
+  padding: 20px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.eventName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eventName h4 {
+  color: #334155;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.date {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.description {
+  color: #334155;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.avatarCon {
+  display: flex;
+  align-items: center;
+  margin: 40px 0 45px 0;
+  position: relative;
+}
+
+.avatarImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+.avatarImg:nth-child(2) {
+  left: 25px;
+  z-index: 2;
+}
+
+.avatarImg:nth-child(3) {
+  left: 50px;
+  z-index: 1;
+}
+
+.avatarImg:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+.speaker p {
+  color: #334155;
+  font-size: 14px;
+}
+
+.speaker span {
+  color: #334155;
+  font-size: 14px;
+}
+
+.allBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+  padding: 20px;
+}
+
+.editBtn {
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #334155;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.deleteBtn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #f43f5e;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.completeBtn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #8576ff;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }

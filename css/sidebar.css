@@ -125,7 +125,6 @@
   padding: 8px;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 2px;
 }
 
 .sideBarItem span {
@@ -135,6 +134,7 @@
 .sideBarItem:hover {
   background-color: #fcf7ff;
   color: #8576ff;
+  border-radius: 2px;
 }
 
 .notify {
@@ -149,6 +149,7 @@
 .notify:hover {
   background-color: #fcf7ff;
   color: #8576ff;
+  border-radius: 2px;
 }
 
 .sideBarItemNotification {
@@ -183,6 +184,12 @@
   padding: 8px;
   font-size: 14px;
   cursor: pointer;
+}
+
+.darkMode:hover {
+  cursor: pointer;
+  background-color: #fcf7ff;
+  border-radius: 2px;
 }
 
 .toggle-container {
@@ -233,6 +240,12 @@
   align-items: center;
   gap: 8px;
   padding: 8px;
+}
+
+.profile:hover {
+  cursor: pointer;
+  background-color: #fcf7ff;
+  border-radius: 2px;
 }
 
 .profile span {

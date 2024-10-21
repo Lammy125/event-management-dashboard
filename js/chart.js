@@ -69,12 +69,12 @@ document.getElementById("dark-mode-toggle").addEventListener("click", () => {
 
   if (currentTickColor === "#64748B") {
     // Switch to dark mode colors
-    myChart.options.scales.y.ticks.color = "#fff"; // White text color for ticks
-    myChart.options.scales.x.ticks.color = "#fff"; // White text color for ticks
+    myChart.options.scales.y.ticks.color = "#fff"; 
+    myChart.options.scales.x.ticks.color = "#fff"; 
   } else {
     // Switch back to light mode colors
-    myChart.options.scales.y.ticks.color = "#64748B"; // Black text color for ticks
-    myChart.options.scales.x.ticks.color = "#64748B"; // Black text color for ticks
+    myChart.options.scales.y.ticks.color = "#64748B"; 
+    myChart.options.scales.x.ticks.color = "#64748B"; 
   }
 
   // Refresh the chart to apply changes

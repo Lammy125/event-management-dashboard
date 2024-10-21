@@ -23,7 +23,6 @@ body.dark-mode #homeIcon {
 
 body.dark-mode .sideBarItem:hover {
   background-color: #8576ff;
-  border-radius: 2px;
 }
 
 body.dark-mode .sideBarFirstItem {
@@ -36,15 +35,22 @@ body.dark-mode .sideBarItem span {
 
 body.dark-mode .notify:hover {
   background-color: #8576ff;
-  border-radius: 2px;
 }
 
 body.dark-mode .notify span {
   color: #ffffff;
 }
 
+body.dark-mode .darkMode:hover {
+  background-color: #8576ff;
+}
+
 body.dark-mode .toggle-container {
   color: #ffffff;
+}
+
+body.dark-mode .profile:hover {
+  background-color: #8576ff;
 }
 
 body.dark-mode .profile span {
@@ -150,6 +156,10 @@ body.dark-mode .tableBody td {
   color: #ffffff;
 }
 
+body.dark-mode .event-item:hover {
+  background-color: #6a667675;
+}
+
 body.dark-mode .in-progress {
   border: 1px solid #77b1ff;
   background-color: transparent;
@@ -183,4 +193,34 @@ body.dark-mode .next {
 
 body.dark-mode .next img {
   content: url("/images/chevron-right-white.png");
+}
+
+body.dark-mode .event {
+  background-color: #484554;
+  color: #fcf7ff;
+}
+
+body.dark-mode .event h4 {
+  color: #fcf7ff;
+}
+
+body.dark-mode .close {
+  background-color: #ada9bb;
+  border: 1px solid #484554;
+}
+
+body.dark-mode .event p {
+  color: #fcf7ff;
+}
+
+body.dark-mode .event span {
+  color: #fcf7ff;
+}
+
+body.dark-mode .avatarImg {
+  border: 2px solid #484554;
+}
+
+body.dark-mode .allBtn {
+  background-color: #ada9bb;
 }
