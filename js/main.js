@@ -67,3 +67,17 @@ prevButton.addEventListener("click", function () {
 // Initialize with the first image and start auto-slide
 updateBackground();
 startAutoSlide();
+
+// toggle event visibility for mobile view
+document.querySelectorAll(".eventNameCon").forEach((item) => {
+  item.addEventListener("click", function () {
+    // Find the associated eventSpeakerCon for this event
+    const speakerCon = this.nextElementSibling;
+
+    // Toggle the 'show' class on the eventSpeakerCon
+    speakerCon.classList.toggle("show");
+
+    // Toggle the 'active' class on the eventNameCon to change the background
+    this.classList.toggle("active");
+  });
+});

@@ -378,6 +378,10 @@ body.dark-mode #infoIcon {
   background-color: #3b82f6;
 }
 
+.eventTableMobile {
+  display: none;
+}
+
 /* Pagination */
 .pagination {
   display: flex;
