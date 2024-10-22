@@ -9,6 +9,10 @@
   transition: width 0.3s ease;
 }
 
+.sideBarMobile {
+  display: none;
+}
+
 .logo {
   padding: 8px;
   margin-bottom: 5px;

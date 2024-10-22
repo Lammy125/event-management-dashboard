@@ -464,6 +464,7 @@ body.dark-mode #infoIcon {
   border-radius: 2px;
   width: 440px;
   position: relative;
+  overflow: hidden;
 }
 
 .event {
@@ -474,13 +475,13 @@ body.dark-mode #infoIcon {
   display: flex;
 }
 
-.eventName {
+.eventNameModal {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.eventName h4 {
+.eventNameModal h4 {
   color: #334155;
   font-weight: 600;
   font-size: 18px;

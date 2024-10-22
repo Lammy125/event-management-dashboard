@@ -3,6 +3,54 @@
     display: none;
   }
 
+  /* Default state for the hamburger icon */
+  .menuIcon img {
+    transition: transform 0.3s ease; /* Smooth transition for the icon */
+  }
+
+  .menuIcon.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .menuIcon.active img {
+    content: url("/images/close.png");
+    width: 12px;
+    height: 12px;
+    transform: rotate(90deg); /* Rotate the icon 90 degrees */
+  }
+
+  /* Initially hide the sidebar */
+  #sidebarMobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    z-index: 100;
+    margin-top: 73px;
+  }
+
+  /* Show sidebar when active */
+  #sidebarMobile.active {
+    display: block;
+  }
+
+  .sideBarMobile {
+    display: block;
+    padding: 10px 18px;
+    height: 100%;
+  }
+
   main {
     padding: 10px 15px 100px 15px;
   }
@@ -14,14 +62,17 @@
     margin-bottom: 5px;
     padding: 10px 15px 10px 9px;
     border-bottom: 1px solid #e2e8f0;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .title {
+    margin-top: 70px;
   }
 
   .logo {
     margin-bottom: 0;
-  }
-
-  .menuIcon img {
-    height: 30px;
   }
 
   .navBar {
@@ -40,16 +91,16 @@
     justify-content: space-between;
   }
 
-  .navBarFirstItem {
+  .navBarFirstItemMobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-top: 4px solid #8576ff;
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 
-  .navBarFirstItem span {
+  .navBarFirstItemMobile span {
     font-size: 14px;
     color: #8576ff;
   }
@@ -60,7 +111,7 @@
     align-items: center;
     justify-content: center;
     gap: 3px;
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 
   .navBarItem img {
@@ -72,7 +123,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 
   .navBarItemProfile img {
@@ -185,6 +236,14 @@
     gap: 3px;
   }
 
+  .eventName img {
+    transition: transform 0.3s ease;
+  }
+
+  .eventNameCon.active img {
+    content: url("/images/chevron-down-event.png");
+  }
+
   .eventName span {
     color: #334155;
     font-size: 14px;
@@ -199,7 +258,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    padding: 10px 2px;
+    padding: 12px;
     background-color: #f5f5f5;
     border: 1px solid #fcf7ff;
   }
@@ -218,7 +277,7 @@
   .eventSpeakerCon span {
     color: #334155;
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 13px;
   }
 
   .showText {
@@ -266,5 +325,13 @@
 
   .eventSpeakerCon span {
     font-size: 12px;
+  }
+
+  .pageNumber {
+    gap: 7px;
+  }
+
+  .modal > div {
+    width: 290px;
   }
 }

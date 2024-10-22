@@ -8,6 +8,68 @@ body.dark-mode .sideBar {
   border-right: none;
 }
 
+body.dark-mode .sideBarMobile {
+  background-color: #484554;
+}
+
+body.dark-mode #sidebarMobile {
+  margin-top: 72px;
+}
+
+body.dark-mode .header {
+  background-color: #484554;
+  border: none;
+}
+
+body.dark-mode .menuIcon img {
+  content: url("/images/solar_hamburger-menu-broken-white.png");
+}
+
+body.dark-mode .menuIcon.active img {
+  content: url("/images/close.png");
+}
+
+body.dark-mode .navBar {
+  background-color: #383544;
+  border-top: 1px solid #ada9bb;
+}
+
+body.dark-mode .navBarFirstItemMobile img {
+  content: url("/images/home.png");
+}
+
+body.dark-mode .navBarFirstItemMobile span {
+  color: #8576ff;
+}
+
+body.dark-mode .navBarFirstItem span {
+  color: #fcf7ff;
+}
+
+body.dark-mode .navBarItem span {
+  color: #fcf7ff;
+}
+
+body.dark-mode .eventMobile img {
+  content: url("/images/solar_calendar-linear-mobile-white.png");
+}
+
+body.dark-mode .speakerMobile img {
+  content: url("/images/solar_user-speak-rounded-linear-mobile-white.png");
+}
+
+body.dark-mode .reportMobile img {
+  content: url("/images/solar_document-linear-mobile-white.png");
+}
+
+body.dark-mode .navBarItemProfile img {
+  content: url("/images/user-circle-mobile-white.png");
+}
+
+body.dark-mode .navBarItemProfile span {
+  color: #fcf7ff;
+}
+
 body.dark-mode .sideBarFirstItem span {
   color: #ffffff;
 }
@@ -223,4 +285,51 @@ body.dark-mode .avatarImg {
 
 body.dark-mode .allBtn {
   background-color: #ada9bb;
+}
+
+body.dark-mode .eventTitle {
+  background-color: #6a6676;
+}
+
+body.dark-mode .eventTitle h5 {
+  color: #fcf7ff;
+}
+
+body.dark-mode .eventNameCon {
+  background-color: #484554;
+}
+
+body.dark-mode .eventNameCon.active {
+  background-color: #514e5d;
+  border: none;
+}
+
+body.dark-mode .eventName span {
+  color: #fcf7ff;
+}
+
+body.dark-mode .eventName img {
+  content: url("/images/chevron-right-mobile-white.png");
+}
+
+body.dark-mode .eventNameCon.active img {
+  content: url("/images/chevron-down-mobile-white.png");
+}
+
+body.dark-mode .eventSpeakerCon {
+  background-color: #383544;
+  border: none;
+  padding: 14px 12px;
+}
+
+body.dark-mode .eventSpeaker img {
+  content: url("");
+}
+
+body.dark-mode .eventSpeaker p {
+  color: #fcf7ff;
+}
+
+body.dark-mode .eventSpeakerCon span {
+  color: #fcf7ff;
 }
