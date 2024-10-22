@@ -17,6 +17,10 @@ body.dark-mode #sidebarMobile {
   margin-top: 72px;
 }
 
+body.dark-mode #sidebarMobile.active {
+  display: block;
+}
+
 body.dark-mode .header {
   background-color: #484554;
   border: none;
@@ -233,7 +237,7 @@ body.dark-mode .completed {
   background-color: transparent;
 }
 
-body.dark-mode .show-text h5 {
+body.dark-mode .showText h5 {
   color: #ffffff;
 }
 
