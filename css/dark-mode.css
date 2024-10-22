@@ -13,6 +13,7 @@ body.dark-mode .sideBarMobile {
 }
 
 body.dark-mode #sidebarMobile {
+  display: none;
   margin-top: 72px;
 }
 
